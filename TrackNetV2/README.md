@@ -56,6 +56,7 @@ YOLOv8 & ByteTrack와 마찬가지로 약 13초의 HARD, GRASS, CLAY코트의 �
 ### Ball Detection
 
 - 사진 추가
+  
 Length: 영상의 프레임 수
 TP: 정답값과 예측값의 거리가 t 이하일 경우
 TN: 정답값에 공이 없는 것을 잘 예측한 경우
@@ -85,6 +86,7 @@ TrackNet의 주요 특징으로는 input data로 3장의 sequence 데이터를 �
 하지만 그렇기 때문에 속도에 있어서 취약점이 존재한다. 
 TrackNetV2는 TrackNet V1에서 loss function, 데이터셋 처리 방식등을 변경하고 모델에 skip connection 추가하여 tennis ball tracking의 성능을 올렸으며 속도도 TrackNetV1에 비해 비약적으로 향상됐다. 
 빠르게 변화하고, blur한 이미지를 detection하는데 있어서 기존의 V1모델에 비해 훨씬 좋은 성능을 보였다.
+- 사진 추가
 
 
 <br>
