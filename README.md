@@ -17,8 +17,8 @@ tennis ball &amp; players tracking with various models
 
 
 ## Models
-- 1. YOLOv8 & ByteTrack
-  2. TrackNetV2
+1. YOLOv8 & ByteTrack
+2. TrackNetV2
 
 ## Dataset
 - 총 13,027장의 HD(1280*720) resolution 데이터셋
