@@ -1,7 +1,6 @@
 # tennis-tracking
 tennis ball &amp; players tracking with various models
 
-# YOLOv8-ByteTrack
 
 최근 스포츠 분야에서의 AI 활용 사례가 증가하고 있다. 특히 경기나 훈련 영상에 컴퓨터 비전 기술을 적용하여 경기 내용 분석 및 선수 훈련 등에 활용하는 움직임이 늘고 있다. 선수나 심판과 같은 사람들에 대한 detection 및 tracking은 잘 수행해내지만, 공과 같이 작고 빠른 물체들에 대한 성능은 비교적 낮은 편이다. 작고 빠른 물체에 대한 detection 및 tracking을 향상시키면서 스포츠 영상을 실시간(real-time)으로 detection 및 tracking이 가능하다면 경기 내용 분석 및 선수 훈련에 더 잘 활용할 수 있을 것으로 보인다.
 
