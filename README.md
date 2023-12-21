@@ -7,6 +7,10 @@ tennis ball &amp; players tracking with various models
 ## Summary
 비교적 카메라 움직임이 적은 테니스 영상에서 공 및 선수 등의 객체에 대하여 detection 및 tracking을 수행한다. 기존의 실시간 object detection에서 사용되는 YOLO의 경우 테니스 공과 같이 작고 빠르게 움직이는 물체에 대한 detection의 성능은 낮은 편이다. 또한 YOLO뿐만 아니라 다양한 detection 모델들이 존재하는데, YOLOv8 & ByteTrack과 TrackNetV2를 구현 및 실행해보면서 빠르고 작은 물체에 대한 detection에 좋은 모델 및 기법을 찾는다. 해당 방법들을 이용하여 우선적으로 detection 성능을 올린 뒤, tracking에서 성능을 향상시키기 위해 kalman filter 및 tracking algorithm을 적절히 조절하는 등의 기법을 사용한다. 
 
+각 모델의 자세한 내용은 각 폴더의 파일에서 확인할 수 있다.
+
+
+
 ## Goal
 - 테니스 중계 영상에 대한 object tracking에서 small object인 테니스공에 대한 detection performance는 사람 추적에 비해 비교적 낮은 문제 존재. 특히 real-time일수록 두드러짐.
 -> 테니스 중계 영상에서의 공과 사람에 대한 검출 및 추적에 대한 성능 향상(특히 공)
@@ -20,7 +24,6 @@ tennis ball &amp; players tracking with various models
 1. YOLOv8 & ByteTrack
 2. TrackNetV2
 
-자세한 내용은 각 폴더의 파일에서 확인할 수 있다.
 
 ## Dataset
 - 총 13,027장의 HD(1280*720) resolution 데이터셋
