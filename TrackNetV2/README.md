@@ -44,12 +44,11 @@ TrackNetV2를 학습하여 test해본 결과, 기존의 논문과 비슷한 성�
 
 
 ## Evaluation
+![evaluation](https://github.com/uomoy/tennis-tracking/assets/59008690/21e97240-f1fb-462a-b935-40d24033f153)
 50 epoch 중에서 가장 성능이 좋은 epoch 46 모델을 이용하여 evaluation을 진행하였다.
 
 YOLOv8 & ByteTrack와 마찬가지로 약 13초의 HARD, GRASS, CLAY코트의 세가지 영상으로 test을 진행하였다. 
 공의 좌표값으로 t 거리만큼 떨어진 거리 안에서 detection되었으면 detection 되었다고 판단한다. 
-
-![evaluation](https://github.com/uomoy/tennis-tracking/assets/59008690/21e97240-f1fb-462a-b935-40d24033f153)
 
 <br>
 <br>
@@ -89,8 +88,6 @@ TrackNet의 주요 특징으로는 input data로 3장의 sequence 데이터를 �
 하지만 그렇기 때문에 속도에 있어서 취약점이 존재한다. 
 TrackNetV2는 TrackNet V1에서 loss function, 데이터셋 처리 방식등을 변경하고 모델에 skip connection 추가하여 tennis ball tracking의 성능을 올렸으며 속도도 TrackNetV1에 비해 비약적으로 향상됐다. 
 빠르게 변화하고, blur한 이미지를 detection하는데 있어서 기존의 V1모델에 비해 훨씬 좋은 성능을 보였다.
-- 사진 추가
-
 
 <br>
 <br>
