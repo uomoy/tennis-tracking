@@ -49,13 +49,15 @@ TrackNetV2를 학습하여 test해본 결과, 기존의 논문과 비슷한 성�
 YOLOv8 & ByteTrack와 마찬가지로 약 13초의 HARD, GRASS, CLAY코트의 세가지 영상으로 test을 진행하였다. 
 공의 좌표값으로 t 거리만큼 떨어진 거리 안에서 detection되었으면 detection 되었다고 판단한다. 
 
+![evaluation](https://github.com/uomoy/tennis-tracking/assets/59008690/21e97240-f1fb-462a-b935-40d24033f153)
+
 <br>
 <br>
 
 ## Performance
 ### Ball Detection
 
-- 사진 추가
+![ball detection](https://github.com/uomoy/tennis-tracking/assets/59008690/31ecf001-bc08-450e-9712-435d2340ffcf)
   
 Length: 영상의 프레임 수
 TP: 정답값과 예측값의 거리가 t 이하일 경우
@@ -79,6 +81,7 @@ TrackNet은 Ball을 detection한 후에, detection된 점들을 이어서 Tracki
 따라서 위의 test dataset에서 ball을 detection한 후에, 이들을 이어 붙여 공의 궤적을 그려서 공을 잘 추적하고 있는지 판단한다.
 세 test영상에 대해 공의 궤적을 그려본 결과, 공을 잘 추적하고 있다고 판단된다.
 특히 TrackNetV1과 달리 공이 매우 빠른 부분, bounce되는 부분에서도 공을 잘 추적하고 있는 것으로 보인다. 
+![tracknet image](https://github.com/uomoy/tennis-tracking/assets/59008690/f367de48-6a6e-4020-871c-9349391df6c6)
 
 ### Characteristics
 TrackNet의 주요 특징으로는 input data로 3장의 sequence 데이터를 사용해서 공의 궤적을 추적하는데 있다. 
